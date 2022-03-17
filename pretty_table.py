@@ -13,6 +13,6 @@ class PrettyTable:
                 result += f"| {j} "
             result += "|\n"
         result += ligne
-        
+
         return result
 
