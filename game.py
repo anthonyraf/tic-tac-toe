@@ -45,7 +45,7 @@ class Jeu:
                     compteur += 1
             if compteur == 3:
                 resultat = (True, 1)
-        
+
         #verticale
         for i in range(0,3):
             compteur = 0
@@ -70,7 +70,7 @@ class Jeu:
                 compteur += 1
             if compteur == 3:
                 resultat = (True, 1)
-        
+
         #égalité
         compteur = 0
         for i in range(3):
@@ -81,7 +81,7 @@ class Jeu:
             resultat = (True, 0)
 
         return resultat
-    
+
     def test_resultat(self):
         fdj = self.fin_du_jeu()
         if fdj[0]:
@@ -91,7 +91,7 @@ class Jeu:
             elif fdj[1] == 0:
                 self.affichage()
                 print("Egalité entre les deux joueurs")
-    
+
     def affichage(self):
         print(f"Tour du {self.tour[1]} => {self.tour[0]}")
         plateau = PrettyTable(self.plateau)
