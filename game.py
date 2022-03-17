@@ -77,7 +77,7 @@ class Jeu:
             for j in range(3):
                 if plateau[i][j] != " ":
                     compteur += 1
-        if compteur == 9 and resultat[0] == False:
+        if compteur == 9 and resultat[0] is False:
             resultat = (True, 0)
 
         return resultat
