@@ -1,4 +1,4 @@
-# Tic-tac-toe cli
+# Tic tac toe cli
 Simple tic-tac-toe game played on terminal
 
 ## Problems
